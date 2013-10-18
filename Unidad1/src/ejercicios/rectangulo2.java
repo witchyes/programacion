@@ -23,7 +23,7 @@ public class rectangulo2 {
 	y1= teclado.nextFloat();
 	System.out.println("Escribe y2: ");
 	y2=teclado.nextFloat();
-	area=(x1*y1)+(x2*y2);
+	area=(x2-x1)+(y2*y1);
 	
 	System.out.println("Area: "+area);
 	
