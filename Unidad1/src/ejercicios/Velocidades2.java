@@ -21,7 +21,7 @@ public class Velocidades2 {
 		// tambien se puede poner tamaño = tamaño * Math.pow (2,20) * 8;
 		
 		velocidad = velocidad * 1000000;
-		// tambien se puede poner velocidad = velocidad * Math.pow (6,10);
+		// tambien se puede poner velocidad = velocidad * Math.pow (6,1);
 		
 		System.out.print ("Datos: "+tamaño+"bips");
 		System.out.print ("Velocidad "+velocidad+ "bips");
