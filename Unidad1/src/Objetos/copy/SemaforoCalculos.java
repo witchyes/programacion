@@ -5,7 +5,7 @@ import graphics.Rectangle;
 
 public class SemaforoCalculos {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		Rectangle caja, palo;
 		Ellipse verde, ambar, rojo;
@@ -20,6 +20,7 @@ public class SemaforoCalculos {
 		caja = new Rectangle (centro_x - ancho/2, centro_y - alto/2, ancho, alto);
 		
 		caja.draw ();
+		caja.fill ();
 		
 		palo = new Rectangle (centro_x - ancho/10,centro_y + alto/2,ancho/5,alto);
 		
@@ -34,6 +35,45 @@ public class SemaforoCalculos {
 		
 		rojo = new Ellipse (centro_x - diametro_disco/2, centro_y + diametro_disco,diametro_disco,diametro_disco);
 		rojo.draw ();
+		
+		verde.fill ();
+		verde.setColor (Color.GREEN);
+		ambar.fill ();
+		ambar.setColor (Color.WHITE);
+		rojo.fill ();
+		rojo.setColor (Color.WHITE);
+		
+		Thread.sleep(1000);
+		
+		
+		verde.fill ();
+		verde.setColor (Color.WHITE);
+		
+		
+		
+		ambar.fill ();
+		ambar.setColor (Color.ORANGE);
+		
+		
+		rojo.fill ();
+		rojo.setColor (Color.WHITE);
+		
+		Thread.sleep(1000);
+		
+		
+		verde.fill ();
+		verde.setColor (Color.WHITE);
+		
+		
+		ambar.fill ();
+		ambar.setColor (Color.WHITE);
+		
+		
+		rojo.fill ();
+		rojo.setColor (Color.RED);
+		
+		
+		
 		
 	}
 
