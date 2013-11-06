@@ -6,6 +6,9 @@ import graphics.Ellipse;
 import graphics.Color;
 import graphics.Line;
 
+
+
+
 public class Coche {
 
 	public static void main(String[] args)  throws InterruptedException {
@@ -13,6 +16,11 @@ public class Coche {
 		Canvas lienzo;
 		Rectangle rectangulo1,rectangulo2;
 		Ellipse rueda1,rueda2;
+		Line suelo;
+		
+		
+		suelo = new Line (10,230,1000,230);
+		suelo.draw ();
 		
 		lienzo = Canvas.getInstance();
 		rectangulo1 = new Rectangle		(100,150,400,70);
