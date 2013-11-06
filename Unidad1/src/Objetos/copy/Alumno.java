@@ -6,6 +6,7 @@ public class Alumno {
 	
 	public void mensaje(){
 		System.out.println ("Hola soy " + nombre);
+		
 	}
 	
 }
