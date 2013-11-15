@@ -10,7 +10,7 @@ public class NumeroDistinto0 {
 		
 		Scanner teclado = new Scanner (System.in);
 		int numero = 0;
-		int acumulador=0;
+		int contador=0;
 		int resultado_multiplicacion =1;
 		
 		do{
@@ -18,11 +18,11 @@ public class NumeroDistinto0 {
 			numero = teclado.nextInt ();
 			if (numero !=0 ) resultado_multiplicacion=numero*resultado_multiplicacion;
 			
-			acumulador++;
+			contador++;
 			
 		}	while (numero != 0);
 		
-		System.out.println ("Has introducido "+ (acumulador-1)+" numeros");
+		System.out.println ("Has introducido "+ (contador-1)+" numeros");
 		System.out.println ("El resultado de las multiplicaciones es: "+ resultado_multiplicacion);
 	
 		
